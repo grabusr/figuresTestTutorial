@@ -10,11 +10,16 @@
 namespace figures
 {
 
-    class Round : public IFigure
-    {
-    public:
-        float getArea() override;
-    };
+class Circle : public IFigure
+{
+public:
+    Circle();
+    Circle(int a_Radius);
+    float getArea() override;
+
+private:
+    int m_Radius;
+};
 
 }
 

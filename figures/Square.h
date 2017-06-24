@@ -13,7 +13,12 @@ namespace figures
 class Square : public IFigure
 {
 public:
+    Square();
+    Square(int a_Side);
     float getArea() override;
+
+private:
+    int m_Side;
 };
 
 }
