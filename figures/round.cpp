@@ -7,7 +7,7 @@
 namespace figures
 {
 
-    float round::getArea()
+    float Round::getArea()
     {
         return 0;
     }

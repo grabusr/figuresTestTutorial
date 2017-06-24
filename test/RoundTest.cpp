@@ -3,6 +3,7 @@
 //
 #include <gtest/gtest.h>
 #include "round.h"
+
 namespace test
 {
 
@@ -14,7 +15,7 @@ namespace test
 
     TEST_F(RoundTest, SimpleTest)
     {
-        figures::round s;
+        figures::Round s;
     }
 
 }
