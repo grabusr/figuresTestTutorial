@@ -16,7 +16,7 @@ namespace test {
 
     TEST(CircleTest, GetAreaOfCircleTest)
     {
-        figures::Circle circle;
+        figures::Circle circle(5);
 
         const auto returnedArea = circle.getArea();
         EXPECT_THAT(returnedArea, FloatEq(10));

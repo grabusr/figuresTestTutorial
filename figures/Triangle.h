@@ -14,6 +14,7 @@ namespace figures {
         float a;
     public:
         Triangle(float side);
+        ~Triangle();
 
         float getArea() override;
     };

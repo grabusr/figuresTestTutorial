@@ -3,11 +3,20 @@
 //
 
 #include "Circle.h"
+#include <math.h>
 
 namespace figures
 {
     float Circle::getArea() {
-        return 0;
+        return (float) (M_PI * r * r);
+    }
+
+    Circle::~Circle() {
+
+    }
+
+    Circle::Circle(float radius) {
+        r = radius;
     }
 }
 

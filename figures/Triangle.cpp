@@ -3,16 +3,20 @@
 //
 
 #include "Triangle.h"
+#include <math.h>
 
 namespace figures
 {
-    Triangle::Triangle(float ide) {
+    Triangle::Triangle(float side) {
+        a = side;
+    }
+
+    Triangle::~Triangle() {
 
     }
 
     float Triangle::getArea()
     {
-        return 0;
+        return (float) (pow(a, 2) * sqrt(3) / 4);
     }
-
 }
