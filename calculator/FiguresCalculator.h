@@ -5,16 +5,16 @@
 #ifndef PRIMESCALCULATOR_FIGURESCALCULATOR_H
 #define PRIMESCALCULATOR_FIGURESCALCULATOR_H
 
-#include <string>
+#include <istream>
 
 namespace calculator
 {
 
-class FiguresCalculator
-{
-public:
-    int getFiguresAreaSumFromFile(const std::string& file);
-};
+    class FiguresCalculator
+    {
+    public:
+        float getFiguresAreaSumFromFile(const std::istream &file);
+    };
 
 }
 
