@@ -8,6 +8,8 @@
 namespace figures {
 
     float figures::Rectangle::getArea() {
+        if (m_a < 0 || m_b < 0)
+            return -1;
         return roundf((m_a * m_b) * 100.0f) / 100.0f;
     }
 
@@ -15,7 +17,5 @@ namespace figures {
                                                       m_b(b)
     {}
 
-    Rectangle::~Rectangle() {
-
-    }
+    Rectangle::~Rectangle() = default;
 }
