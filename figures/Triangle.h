@@ -1,0 +1,14 @@
+//
+// Created by RAB on 24.06.2017.
+//
+
+#ifndef PRIMESCALCULATOR_TRIANGLE_H
+#define PRIMESCALCULATOR_TRIANGLE_H
+
+
+class Triangle {
+
+};
+
+
+#endif //PRIMESCALCULATOR_TRIANGLE_H
