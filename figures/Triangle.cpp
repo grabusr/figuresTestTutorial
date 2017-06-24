@@ -7,7 +7,7 @@
 namespace figures {
 
     float Triangle::getArea() {
-        return (float) (a * a * sqrt(3) / 4);
+        return (float) (std::round((a * a * sqrt(3) / 4) * 100) / 100);
     }
 
     Triangle::Triangle(float a) {

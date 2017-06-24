@@ -24,7 +24,7 @@ namespace test {
 
         //when:
         float expected = 30.25;
-        float result = std::round(sut.getArea() * 100) / 100;
+        float result = sut.getArea();
 
         //expected:
         EXPECT_THAT(expected, FloatEq(result));
