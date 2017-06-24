@@ -14,4 +14,8 @@ namespace figures {
 
     }
 
+    Square::~Square() {
+
+    }
+
 }

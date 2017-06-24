@@ -12,7 +12,7 @@ namespace figures {
     class Square : public IFigure {
     public:
         Square(float a);
-
+        virtual ~Square();
         float getArea() override;
 
     private:

@@ -13,4 +13,8 @@ namespace figures {
     figures::Rectangle::Rectangle(float a, float b) : m_a(a),
                                                       m_b(b)
     {}
+
+    Rectangle::~Rectangle() {
+
+    }
 }

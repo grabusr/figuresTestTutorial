@@ -12,6 +12,7 @@ namespace figures {
     class Rectangle : public IFigure {
     public:
         Rectangle(float a, float b);
+        virtual ~Rectangle();
         float getArea() override;
 
     private:
