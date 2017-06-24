@@ -19,6 +19,6 @@ namespace test {
         figures::Circle circle(5);
 
         const auto returnedArea = circle.getArea();
-        EXPECT_THAT(returnedArea, FloatEq(10));
+        EXPECT_THAT(returnedArea, FloatEq(78.54));
     }
 }

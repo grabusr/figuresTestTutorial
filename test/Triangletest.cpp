@@ -20,7 +20,7 @@ namespace test {
         figures::Triangle triangle(5);
 
         const auto returnedArea = triangle.getArea();
-        EXPECT_THAT(returnedArea, FloatEq(10));
+        EXPECT_THAT(returnedArea, FloatEq(10.83));
     }
 
 }
