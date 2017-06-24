@@ -9,10 +9,13 @@
 
 namespace figures
 {
-
     class Circle : public IFigure
     {
+    private:
+        float radius;
+
     public:
+        Circle(float radius);
         float getArea() override;
     };
 

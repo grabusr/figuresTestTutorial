@@ -12,7 +12,11 @@ namespace figures
 
     class Triangle : public IFigure
     {
+    private:
+        float side;
+
     public:
+        Triangle(float side);
         float getArea() override;
     };
 

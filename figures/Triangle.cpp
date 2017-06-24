@@ -3,13 +3,17 @@
 //
 
 #include "Triangle.h"
+#include <cmath>
 
 namespace figures
 {
 
     float Triangle::getArea()
     {
-        return 0;
+        return roundf((side * side * sqrt(3))/4 * 100.0f)/ 100.0f;
     }
 
+    Triangle::Triangle(float side) : side(side) {
+
+    }
 }

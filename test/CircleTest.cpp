@@ -4,6 +4,7 @@
 
 #include <gtest/gtest.h>
 #include <Circle.h>
+#include <cmath>
 
 namespace test {
 
@@ -11,14 +12,14 @@ namespace test {
 
     };
 
-    TEST(CircleTest, TestName) {
+    TEST_F(CircleTest, TestsCircleAreaCalculation) {
         // given:
-        figures::Circle c;
+        figures::Circle c{1};
 
         // when:
         const auto area = c.getArea();
 
         // expected:
-        EXPECT_EQ(0, area);
+        EXPECT_EQ(roundf(M_PI * 100.0f)/100.0f, area);
     }
 }

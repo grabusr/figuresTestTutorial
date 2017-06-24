@@ -4,6 +4,7 @@
 
 #include <gtest/gtest.h>
 #include <Triangle.h>
+#include <cmath>
 
 namespace test {
 
@@ -11,14 +12,14 @@ namespace test {
 
     };
 
-    TEST_F(TriangleTest, Simpletest) {
+    TEST_F(TriangleTest, TestsTriangleAreaCalculation) {
         // given:
-        figures::Triangle t;
+        figures::Triangle t{1};
 
         // when:
         const auto area = t.getArea();
 
         // expected:
-        EXPECT_EQ(0, area);
+        EXPECT_EQ(roundf(sqrt(3)/4 * 100.0f)/ 100.0f, area);
     }
 }
