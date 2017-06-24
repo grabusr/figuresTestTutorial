@@ -25,7 +25,7 @@ namespace test
 		const auto result = ta.getArea();
 
 		//expected
-		EXPECT_FLOAT_EQ(10.83f, result);
+		EXPECT_FLOAT_EQ(result, 10.83f);
 
 	}
 }
