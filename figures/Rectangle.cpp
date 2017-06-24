@@ -4,8 +4,14 @@
 
 #include "Rectangle.h"
 
-namespace figures {
-    float figures::Rectangle::getArea() {
-        return 0;
+namespace figures
+{
+    float figures::Rectangle::getArea()
+    {
+        return side1 * side2;
+    }
+
+    Rectangle::Rectangle(float side1, float side2) : side1{side1}, side2{side2}
+    {
     }
 }

@@ -7,9 +7,14 @@
 namespace figures
 {
 
-float Square::getArea()
-{
-    return 0;
-}
+    float Square::getArea()
+    {
+        return side * side;
+    }
+
+    Square::Square(float side) : side{side}
+    {
+
+    }
 
 }

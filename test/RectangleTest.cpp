@@ -6,21 +6,24 @@
 #include "Rectangle.h"
 
 
-namespace test {
+namespace test
+{
 
-    class Rectangletest : public ::testing::Test {
+    class Rectangletest : public ::testing::Test
+    {
 
     };
 
 
-    TEST(Rectangletest, SimpleTest) {
+    TEST(Rectangletest, TestsRectangleAreaCalculation)
+    {
         // given:
-        figures::Rectangle r;
+        figures::Rectangle r{5, 4};
 
         // when:
         auto area = r.getArea();
 
         // expected:
-        EXPECT_EQ(area, 0);
+        EXPECT_EQ(area, 20);
     }
 }

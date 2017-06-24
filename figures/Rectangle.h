@@ -13,8 +13,11 @@ namespace figures
 
     class Rectangle : public IFigure
     {
-
+    private:
+        float side1;
+        float side2;
     public:
+        Rectangle(float,float);
         float getArea() override;
     };
 

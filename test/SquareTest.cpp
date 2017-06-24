@@ -5,19 +5,25 @@
 #include <gtest/gtest.h>
 #include "Square.h"
 
-namespace test {
+namespace test
+{
 
-    class Squaretest : public ::testing::Test {
+    class Squaretest : public ::testing::Test
+    {
 
     };
 
 
-    TEST(Squaretest, SimpleTest) {
-        figures::Square s;
+    TEST(Squaretest, TestsSquareAreaCalculation)
+    {
+        // given:
+        figures::Square s{5};
 
+        // when:
         auto area = s.getArea();
 
-        EXPECT_EQ(area, 0);
+        // expected:
+        EXPECT_EQ(area, 25);
     }
 
 }
