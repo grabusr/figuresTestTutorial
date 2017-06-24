@@ -14,4 +14,17 @@ namespace test
     {
         figures::Square sq;
     }
+
+    TEST_F(Squaretest, CheckIfGiveCorrectResult)
+    {
+        //given:
+        figures::Square sq{10.0, 1.0};
+
+        //when
+        const auto result = sq.getArea();
+
+        //excepted:
+        EXPECT_EQ(10.0, result);
+
+    }
 }
