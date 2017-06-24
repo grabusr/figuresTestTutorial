@@ -1,0 +1,8 @@
+//
+// Created by Hanna Grodzicka on 24.06.2017.
+//
+
+#ifndef PRIMESCALCULATOR_TRIANGLE_H
+#define PRIMESCALCULATOR_TRIANGLE_H
+
+#endif //PRIMESCALCULATOR_TRIANGLE_H
