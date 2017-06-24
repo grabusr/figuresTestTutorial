@@ -10,6 +10,18 @@ namespace test
 
 	TEST_F(CircleTest, Simpletest)
 	{
-		figures::Circle rc;
+		figures::Circle cr(0);
+	}
+	TEST_F(CircleTest, checkIfGivenCorrectResult)
+	{
+		//given
+		figures::Circle cr(10);
+
+		//when
+		const auto result = cr.getArea();
+
+		//expected
+		EXPECT_FLOAT_EQ(10, result);
+
 	}
 }

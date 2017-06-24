@@ -13,6 +13,19 @@ namespace test
 
     TEST_F(Triangletest, Simpletest)
     {
-        figures::Triangle sq;
+        figures::Triangle ta(0);
     }
+
+	TEST_F(Triangletest, checkIfGivenCorrectResult)
+	{
+		//given
+		figures::Triangle ta(5);
+
+		//when
+		const auto result = ta.getArea();
+
+		//expected
+		EXPECT_FLOAT_EQ(10.83f, result);
+
+	}
 }
