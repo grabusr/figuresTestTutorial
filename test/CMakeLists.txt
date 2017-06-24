@@ -14,7 +14,7 @@ include_directories(${CalculatorLib_SOURCE_DIR})
 
 aux_source_directory(. SRC)
 
-add_executable(${TEST_NAME} ${SRC} SquareTest.cpp)
+add_executable(${TEST_NAME} ${SRC})
 
 target_link_libraries(${TEST_NAME} gmock gmock_main)
 target_link_libraries(${TEST_NAME} FiguresLib)
