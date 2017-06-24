@@ -12,6 +12,7 @@ namespace figures
 
 class Square : public IFigure
 {
+
 public:
     float getArea() override;
 };
