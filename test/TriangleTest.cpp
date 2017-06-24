@@ -3,20 +3,20 @@
 //
 
 #include <gtest/gtest.h>
-#include <Circle.h>
+#include <Triangle.h>
 
 namespace test {
 
-    class CircleTest : public ::testing::Test {
+    class TriangleTest : public ::testing::Test {
 
     };
 
-    TEST(CircleTest, TestName) {
+    TEST_F(TriangleTest, Simpletest) {
         // given:
-        figures::Circle c;
+        figures::Triangle t;
 
         // when:
-        const auto area = c.getArea();
+        const auto area = t.getArea();
 
         // expected:
         EXPECT_EQ(0, area);
