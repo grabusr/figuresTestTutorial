@@ -3,3 +3,16 @@
 //
 
 #include "Triangle.h"
+
+namespace figures
+{
+    Triangle::Triangle(float ide) {
+
+    }
+
+    float Triangle::getArea()
+    {
+        return 0;
+    }
+
+}

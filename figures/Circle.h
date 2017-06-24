@@ -6,9 +6,16 @@
 #define PRIMESCALCULATOR_CIRCLE_H
 
 
-class Circle {
+#include "IFigure.h"
 
-};
+namespace figures {
+
+    class Circle : public IFigure {
+    public:
+        float getArea() override;
+    };
+
+}
 
 
 #endif //PRIMESCALCULATOR_CIRCLE_H

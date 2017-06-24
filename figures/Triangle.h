@@ -6,9 +6,19 @@
 #define PRIMESCALCULATOR_TRIANGLE_H
 
 
-class Triangle {
+#include "IFigure.h"
 
-};
+namespace figures {
+
+    class Triangle : public IFigure {
+        float a;
+    public:
+        Triangle(float side);
+
+        float getArea() override;
+    };
+
+}
 
 
 #endif //PRIMESCALCULATOR_TRIANGLE_H
