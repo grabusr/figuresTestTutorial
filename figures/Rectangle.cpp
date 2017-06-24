@@ -7,10 +7,10 @@
 namespace figures {
 
     float figures::Rectangle::getArea() {
-        return 0;
+        return m_a * m_b;
     }
 
-    figures::Rectangle::Rectangle(float a, float b) : a(a),
-                                                      b(b)
+    figures::Rectangle::Rectangle(float a, float b) : m_a(a),
+                                                      m_b(b)
     {}
 }

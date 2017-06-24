@@ -7,10 +7,10 @@
 namespace figures {
 
     float Square::getArea() {
-        return 0;
+        return m_a * m_a;
     }
 
-    Square::Square(float a) {
+    Square::Square(float a) : m_a(a) {
 
     }
 

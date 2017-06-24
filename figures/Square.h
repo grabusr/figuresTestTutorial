@@ -16,7 +16,7 @@ namespace figures {
         float getArea() override;
 
     private:
-        float a;
+        float m_a;
     };
 
 }
