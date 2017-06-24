@@ -23,7 +23,7 @@ namespace test
         auto area = s.getArea();
 
         // expected:
-        EXPECT_EQ(area, 25);
+        EXPECT_FLOAT_EQ(25, area);
     }
 
 }

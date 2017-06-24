@@ -24,6 +24,6 @@ namespace test
         auto area = r.getArea();
 
         // expected:
-        EXPECT_EQ(area, 20);
+        EXPECT_FLOAT_EQ(20, area);
     }
 }
