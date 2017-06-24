@@ -21,7 +21,7 @@ namespace test
 		const auto result = cr.getArea();
 
 		//expected
-		EXPECT_FLOAT_EQ(10, result);
+		EXPECT_FLOAT_EQ(314.16f, result);
 
 	}
 }
