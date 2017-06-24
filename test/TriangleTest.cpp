@@ -3,13 +3,22 @@
 //
 
 #include <gtest/gtest.h>
+#include <gmock/gmock.h>
 #include "Triangle.h"
-
+#include "cmath"
 namespace test
 {
-TEST(TestCompile, SucceedTriangle)
+    using namespace testing;
+    MATCHER_P(TriangleArea, expected,"")
 {
-    figures::Triangle t;
-    SUCCEED();
+    return abs(expected - arg) < 0.01;
 }
+    TEST(TriangleArea, ReturnIfAreaOfTriangleWithDimFourIsProper)
+    {
+        figures::Triangle sut(4);
+        float expected_value=(float)(4*sqrt(3));
+
+        EXPECT_THAT(sut.getArea(),TriangleArea(expected_value));
+        SUCCEED();
+    }
 }

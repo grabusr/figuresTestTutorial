@@ -3,13 +3,16 @@
 //
 
 #include <gtest/gtest.h>
+#include <gmock/gmock.h>
 #include "Rectangle.h"
 
 namespace test
 {
-TEST(TestCompile, SucceedRectangle)
+    using namespace testing;
+TEST(TestRectangle, ReturnIfAreaOfRectangleTwoxThreeIsSix)
 {
-    figures::Rectangle r;
-    SUCCEED();
+    figures::Rectangle sut(2,3);
+
+    EXPECT_THAT(sut.getArea(),Eq(6));
 }
 }
