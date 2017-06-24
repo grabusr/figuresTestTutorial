@@ -10,7 +10,6 @@
 
 namespace figures
 {
-
     class Rectangle : public IFigure
     {
     public:

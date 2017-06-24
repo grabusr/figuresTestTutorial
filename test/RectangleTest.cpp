@@ -3,8 +3,8 @@
 //
 
 #include <gtest/gtest.h>
-#include <Rectange.h>
-#include "Square.h"
+#include "Rectange.h"
+
 namespace test
 {
     class Rectangletest : public ::testing::Test

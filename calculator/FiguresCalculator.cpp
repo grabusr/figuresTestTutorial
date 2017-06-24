@@ -6,5 +6,8 @@
 
 namespace calculator
 {
-
+    float FiguresCalculator::getFiguresAreaSumFromFile(const std::istream& file)
+    {
+        return 0;
+    }
 }
