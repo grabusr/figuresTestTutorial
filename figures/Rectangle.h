@@ -10,7 +10,13 @@
 namespace figures {
 
     class Rectangle : public IFigure {
+    private:
+        float sideA, sideB;
     public:
+
+        Rectangle(float _sideA, float _sideB) :
+                sideA(_sideA), sideB(_sideB) {}
+
         float getArea() override;
     };
 

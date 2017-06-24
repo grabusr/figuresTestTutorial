@@ -8,7 +8,7 @@
 namespace figures {
 
     float Rectangle::getArea() {
-        return 0;
+        return sideA*sideB;
     }
 
 }

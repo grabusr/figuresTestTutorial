@@ -3,6 +3,7 @@
 //
 
 #include <gtest/gtest.h>
+#include <gmock/gmock.h>
 #include "Rectangle.h"
 #include <SlawekFiguresParser.h>
 #include <FiguresCalculator.h>
@@ -12,13 +13,18 @@ namespace test {
 
     class RectangleTest : public ::testing::Test {
     protected:
-        figures::Rectangle R;
+        figures::Rectangle sut{10,20};
     };
 
 
-    TEST(RectangleTest, SimpleTest) {
+    TEST_F(RectangleTest, SimpleTest) {
+        //given:
+        //when:
+        float expectedArea=200;
         calculator::FiguresCalculator cal;
         fileParsers::SlawekFiguresParser parser;
+        //expected:
+        EXPECT_THAT(expectedArea, FloatEq(round(sut.getArea()*100)/100));
     }
 
 
