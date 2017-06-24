@@ -3,11 +3,12 @@
 //
 
 #include "Rectangle.h"
+#include <cmath>
 
 namespace figures {
 
     float figures::Rectangle::getArea() {
-        return m_a * m_b;
+        return roundf((m_a * m_b) * 100.0f) / 100.0f;
     }
 
     figures::Rectangle::Rectangle(float a, float b) : m_a(a),

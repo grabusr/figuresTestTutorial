@@ -3,11 +3,12 @@
 //
 
 #include "Square.h"
+#include <cmath>
 
 namespace figures {
 
     float Square::getArea() {
-        return m_a * m_a;
+        return roundf((m_a * m_a) * 100.0f) / 100.0f;
     }
 
     Square::Square(float a) : m_a(a) {
