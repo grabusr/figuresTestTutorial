@@ -20,7 +20,7 @@ namespace test {
     TEST_F(CircleTest, SimpleTest) {
         //given:
         //when:
-        float expectedArea=314.16;
+        float expectedArea = 314.16;
         calculator::FiguresCalculator cal;
         fileParsers::SlawekFiguresParser parser;
         //expected:

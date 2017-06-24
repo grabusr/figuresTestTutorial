@@ -13,14 +13,14 @@ namespace test {
 
     class RectangleTest : public ::testing::Test {
     protected:
-        figures::Rectangle sut{10,20};
+        figures::Rectangle sut{10, 20};
     };
 
 
     TEST_F(RectangleTest, SimpleTest) {
         //given:
         //when:
-        float expectedArea=200;
+        float expectedArea = 200;
         calculator::FiguresCalculator cal;
         fileParsers::SlawekFiguresParser parser;
         //expected:
