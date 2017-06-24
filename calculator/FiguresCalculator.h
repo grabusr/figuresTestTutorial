@@ -5,7 +5,7 @@
 #ifndef PRIMESCALCULATOR_FIGURESCALCULATOR_H
 #define PRIMESCALCULATOR_FIGURESCALCULATOR_H
 
-#include <string>
+#include <istream>
 
 namespace calculator
 {
@@ -13,7 +13,7 @@ namespace calculator
 class FiguresCalculator
 {
 public:
-    int getFiguresAreaSumFromFile(const std::string& file);
+    float getFiguresAreaSumFromFile(const std::istream& file);
 };
 
 }
