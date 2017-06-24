@@ -24,7 +24,7 @@ namespace test {
         calculator::FiguresCalculator cal;
         fileParsers::SlawekFiguresParser parser;
         //expected:
-        EXPECT_THAT(expectedArea, FloatEq(sut.getArea()));
+        EXPECT_THAT(sut.getArea(), FloatEq(expectedArea));
     }
 
 
