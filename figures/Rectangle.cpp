@@ -4,6 +4,13 @@
 
 #include "Rectangle.h"
 
-float figures::Rectangle::getArea() {
-    return 0;
+namespace figures {
+
+    float figures::Rectangle::getArea() {
+        return 0;
+    }
+
+    figures::Rectangle::Rectangle(float a, float b) : a(a),
+                                                      b(b)
+    {}
 }

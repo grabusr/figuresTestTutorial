@@ -7,14 +7,17 @@
 
 #include "IFigure.h"
 
-namespace figures
-{
+namespace figures {
 
-class Square : public IFigure
-{
-public:
-    float getArea() override;
-};
+    class Square : public IFigure {
+    public:
+        Square(float a);
+
+        float getArea() override;
+
+    private:
+        float a;
+    };
 
 }
 

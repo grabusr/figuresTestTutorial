@@ -15,7 +15,7 @@ namespace test {
     };
 
     TEST(RectangleTest, ForArgumentsFiveAndTwoReturnedAreaIsTen) {
-        figures::Rectangle rectangle;
+        figures::Rectangle rectangle(5, 2);
 
         const auto returnedArea = rectangle.getArea();
         EXPECT_THAT(returnedArea, FloatEq(10));

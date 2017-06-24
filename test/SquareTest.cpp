@@ -11,7 +11,7 @@ namespace test {
     };
 
     TEST(SquareTest, ForArgumentFiveReturnedAreaIsTwentyFive) {
-        figures::Square square;
+        figures::Square square(5);
 
         const auto returnedArea = square.getArea();
 
