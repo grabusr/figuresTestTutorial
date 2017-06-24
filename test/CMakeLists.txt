@@ -20,4 +20,3 @@ target_link_libraries(${TEST_NAME} gmock gmock_main)
 target_link_libraries(${TEST_NAME} FiguresLib)
 target_link_libraries(${TEST_NAME} FileParsersLib)
 target_link_libraries(${TEST_NAME} CalculatorLib)
-

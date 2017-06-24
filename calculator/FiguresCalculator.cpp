@@ -4,9 +4,9 @@
 
 #include "FiguresCalculator.h"
 
-namespace calculator
-{
-    int FiguresCalculator::getFiguresAreaSumFromFile(const std::istream &file) {
+namespace calculator {
+
+    float FiguresCalculator::getFiguresAreaSumFromFile(const std::istream &file) {
         return 0;
     }
 }

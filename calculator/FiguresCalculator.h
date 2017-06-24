@@ -7,14 +7,12 @@
 
 #include <istream>
 
-namespace calculator
-{
+namespace calculator {
 
-class FiguresCalculator
-{
-public:
-    int getFiguresAreaSumFromFile(const std::istream& file);
-};
+    class FiguresCalculator {
+    public:
+        float getFiguresAreaSumFromFile(const std::istream &file);
+    };
 
 }
 

@@ -4,12 +4,10 @@
 
 #include "Square.h"
 
-namespace figures
-{
+namespace figures {
 
-float Square::getArea()
-{
-    return 0;
-}
+    float Square::getArea() {
+        return 0;
+    }
 
 }
