@@ -10,8 +10,9 @@
 namespace figures {
 
     class Triangle : public IFigure {
+        float a;
     public:
-
+        explicit Triangle(float a);
         float getArea() override;
     };
 }

@@ -14,11 +14,19 @@ namespace test {
 
     class TriangleTest : public ::testing::Test {
     protected:
-        figures::Triangle sut;
+
     };
 
     TEST_F(TriangleTest, Succeedtest) {
-        calculator::FiguresCalculator cal;
-        fileParsers::SlawekFiguresParser parser;
+
+        //given:
+        figures::Triangle sut{5};
+
+        //when:
+        float expected = 10.83;
+        float result = std::round(sut.getArea() * 100) / 100;
+
+        //expected:
+        EXPECT_THAT(expected, FloatEq(result));
     }
 }

@@ -14,11 +14,19 @@ namespace test {
 
     class SquareTest : public ::testing::Test {
     protected:
-        figures::Square sut;
+
     };
 
     TEST_F(SquareTest, Succeedtest) {
-        calculator::FiguresCalculator cal;
-        fileParsers::SlawekFiguresParser parser;
+
+        //given:
+        figures::Square sut{5.5};
+
+        //when:
+        float expected = 30.25;
+        float result = std::round(sut.getArea() * 100) / 100;
+
+        //expected:
+        EXPECT_THAT(expected, FloatEq(result));
     }
 }

@@ -7,7 +7,11 @@
 namespace figures {
 
     float Square::getArea() {
-        return 0;
+        return a * a;
+    }
+
+    Square::Square(float a) {
+        this->a = a;
     }
 
 }

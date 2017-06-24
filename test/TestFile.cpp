@@ -11,7 +11,7 @@
 
 namespace test {
     TEST(TestCompile, Succeedtest) {
-        figures::Square s;
+        figures::Square s{5};
         calculator::FiguresCalculator cal;
         fileParsers::SlawekFiguresParser parser;
     }
