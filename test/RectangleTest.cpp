@@ -26,7 +26,7 @@ namespace test
         const auto result = rc.getArea();
 
         //excepted:
-        EXPECT_EQ(5.0, result);
+        EXPECT_FLOAT_EQ(5.0, result);
 
     }
 }

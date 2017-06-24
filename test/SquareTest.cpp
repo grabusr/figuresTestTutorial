@@ -24,7 +24,7 @@ namespace test
         const auto result = sq.getArea();
 
         //excepted:
-        EXPECT_EQ(10.0, result);
+        EXPECT_FLOAT_EQ(10.0, result);
 
     }
 }
