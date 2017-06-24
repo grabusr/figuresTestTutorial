@@ -3,14 +3,15 @@
 //
 
 #include "Square.h"
+#include <cmath>
 
 namespace figures
 {
 
 float Square::getArea()
 {
-
-    return a * b;
+    const auto result = roundf(a * b *100.0f)/100.0f;
+    return result;
 }
 
 }
