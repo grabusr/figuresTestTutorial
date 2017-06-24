@@ -23,10 +23,9 @@ namespace test {
         figures::Triangle sut{5};
 
         //when:
-        float expected = 10.83;
         float result = sut.getArea();
 
         //expected:
-        EXPECT_THAT(expected, FloatEq(result));
+        EXPECT_THAT(result, FloatEq(10.83f));
     }
 }

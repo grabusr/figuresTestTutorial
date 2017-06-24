@@ -23,10 +23,9 @@ namespace test {
         figures::Square sut{5.5};
 
         //when:
-        float expected = 30.25;
         float result = sut.getArea();
 
         //expected:
-        EXPECT_THAT(expected, FloatEq(result));
+        EXPECT_THAT(result, FloatEq(30.25));
     }
 }
