@@ -18,7 +18,6 @@ namespace figures
         Circle(float radius);
         float getArea() override;
     };
-
 }
 
 #endif //PRIMESCALCULATOR_CIRCLE_H

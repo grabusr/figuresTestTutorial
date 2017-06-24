@@ -7,14 +7,12 @@
 
 namespace figures
 {
+    Circle::Circle(float radius) : radius(radius) {
+    }
 
     float Circle::getArea()
     {
-        return roundf(M_PI * radius * radius * 100.0f)/100.0f;
+        const auto result = M_PI * radius * radius;
+        return roundf(result * 100.0f)/100.0f;
     }
-
-    Circle::Circle(float radius) : radius(radius) {
-
-    }
-
 }

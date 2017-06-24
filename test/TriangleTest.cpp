@@ -9,7 +9,6 @@
 namespace test {
 
     class TriangleTest : public ::testing::Test {
-
     };
 
     TEST_F(TriangleTest, TestsTriangleAreaCalculation) {
@@ -20,6 +19,6 @@ namespace test {
         const auto area = t.getArea();
 
         // expected:
-        EXPECT_EQ(roundf(sqrt(3)/4 * 100.0f)/ 100.0f, area);
+        EXPECT_FLOAT_EQ(0.43, area);
     }
 }

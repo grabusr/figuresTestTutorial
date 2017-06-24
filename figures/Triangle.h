@@ -9,7 +9,6 @@
 
 namespace figures
 {
-
     class Triangle : public IFigure
     {
     private:
@@ -19,7 +18,6 @@ namespace figures
         Triangle(float side);
         float getArea() override;
     };
-
 }
 
 #endif //PRIMESCALCULATOR_TRIANGLE_H

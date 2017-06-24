@@ -7,13 +7,12 @@
 
 namespace figures
 {
+    Triangle::Triangle(float side) : side(side) {
+    }
 
     float Triangle::getArea()
     {
-        return roundf((side * side * sqrt(3))/4 * 100.0f)/ 100.0f;
-    }
-
-    Triangle::Triangle(float side) : side(side) {
-
+        const auto result = (side * side * sqrt(3))/4;
+        return roundf(result * 100.0f)/ 100.0f;
     }
 }
